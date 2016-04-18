@@ -14,11 +14,14 @@ gem "less-rails"
 gem 'faraday'
 gem 'figaro'
 gem 'vcr'
+gem 'webmock'
 
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-nav'
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
