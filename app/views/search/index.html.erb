@@ -3,11 +3,11 @@
 <div class="container">
 <% @fuel_stations.each do |station| %>
   <div class="station">
-    <%= station["station_name"] %>
-    <%= station["street_address"] %>
-    <%= station["fuel_type_code"] %>
-    <%= station["access_days_times"] %>
-    <%= station["distance"] %>
+    Name: <%= station["station_name"] %>,
+    Address: <%= station["street_address"] %>,
+    Fuel Type: <%= station["fuel_type_code"] %>,
+    Access Times: <%= station["access_days_times"] %>,
+    Distance: <%= station["distance"] %>
   </div>
 <% end %>
 </div>

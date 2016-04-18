@@ -18,6 +18,7 @@ RSpec.describe "user can search by zipcode" do
     # expect(current_path).to eq "/search?zip=80203"
     #How to make params show up in route path?
 
+    expect(page).to have_content "Name: UDR, Address: 800 Acoma St, Fuel Type: ELEC, Access Times: , Distance: 0.3117"
     # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
     # And the stations should be limited to Electric and Propane
     # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
