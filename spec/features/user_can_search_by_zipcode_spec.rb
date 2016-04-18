@@ -8,11 +8,11 @@
 # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
 require "rails_helper"
 
-RSpec.describe "user can search by zipocode" do
+RSpec.describe "user can search by zipcode" do
   it "returns list of 10 closest stations within 6 miles sorted by distance and limited to electric and propane" do
     visit "/"
 
-    fill_in "Location", :with => "80203"
+    fill_in :q, :with => "80203"
     click_on "Locate"
 
     expect(current_path).to eq "/search?zip=80203"

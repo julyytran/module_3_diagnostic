@@ -14,7 +14,7 @@ gem "less-rails"
 gem 'faraday'
 gem 'figaro'
 gem 'vcr'
-# gem 'webmock'
+gem 'webmock'
 
 group :development, :test do
   gem 'pry-rails'
